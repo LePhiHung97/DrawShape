@@ -15,7 +15,4 @@ public class Circle extends JPanel {
   private Point clickPoint;
   private Shape shape;
   private List<Shape> lstShape = new ArrayList<>();
-
-
-
 }

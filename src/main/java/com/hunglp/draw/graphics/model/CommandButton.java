@@ -8,7 +8,7 @@ package com.hunglp.draw.graphics.model;
  *
  */
 public class CommandButton {
-  public static int COMMAND_BTNLINE = 1;
-  public static int COMMAND_BTNCIRCLE = 2;
-  public static int COMMAND_BTNARC = 3;
+  public static final int COMMAND_BTNLINE = 1;
+  public static final int COMMAND_BTNCIRCLE = 2;
+  public static final int COMMAND_BTNARC = 3;
 }

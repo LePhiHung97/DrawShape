@@ -69,17 +69,12 @@ public class DrawController implements IController, Runnable {
         }
       }
 
-      /**
-       * @param e
-       */
-      /**
-       * @param e
-       */
+
       @Override
       public void mousePressed(MouseEvent e) {
         if (commandBtn == 1) {
 
-          System.out.println(e.getX());
+
           line.setStartX(e.getX());
           line.setStartY(e.getY());
 
@@ -93,7 +88,7 @@ public class DrawController implements IController, Runnable {
           graphics.drawLine(line.getStartX(), line.getStartY(), line.getPrevX(), line.getPrevY());
 
           // Luu toa do press
-          line.setPressPoint(new Point(e.getX(), e.getY()));
+          // line.setPressPoint(new Point(e.getX(), e.getY()));
         } else if (commandBtn == 2) {
           circle.setClickPoint(new Point(e.getPoint()));
           System.out.println("Press point : " + e.getX() + " # " + e.getY());
@@ -134,7 +129,7 @@ public class DrawController implements IController, Runnable {
           }
 
           // Luu toa do release
-          line.setReleasePoint(new Point(e.getX(), e.getY()));
+          // line.setReleasePoint(new Point(e.getX(), e.getY()));
 
 
         } else if (commandBtn == 3) {
@@ -156,8 +151,6 @@ public class DrawController implements IController, Runnable {
           line.setPrevX(e.getX());
           line.setPrevY(e.getY());
           graphics.drawLine(line.getStartX(), line.getStartY(), line.getPrevX(), line.getPrevY());
-
-
         } else if (commandBtn == 3) {
           JOptionPane.showMessageDialog(null, "Arc");
         } else if (commandBtn == 2) {

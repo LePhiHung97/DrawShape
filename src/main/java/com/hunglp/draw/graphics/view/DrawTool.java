@@ -86,7 +86,6 @@ public class DrawTool implements IView {
     splitPaneH.setRightComponent(panelCircle);
     splitPaneH.setBackground(Color.gray);
 
-
     splitPaneV.setLeftComponent(splitPaneH);
     splitPaneV.setRightComponent(panelArc);
     splitPaneV.setBackground(Color.magenta);
